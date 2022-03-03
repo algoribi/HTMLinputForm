@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html>
-  
-  <!-- head : 홈페이지 이용자에게는 보이지 않지만 검색 결과에 노출 될 키워드, 홈페이지 설명, CSS 스타일 등-->
-  <head> 
-    <meta charset="utf-8"> <!-- 문자 인코딩 설정 UTF-8 -->
-    <title>My test page</title> <!-- 페이지 제ㅐ목으로 브라우저 탭에 표시된다. -->
+  <head>
+    <link href="main.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>input Form</title>
   </head>
   
-  <!-- body : 텍스트, 이미지, 비디오 등 페이지에 표시되는 모든 콘텐츠가 포함된다. -->
   <body>
-    <h1>Hell      o.</h1>
-    <p>This is my page</p>
+    <div class="mainbox">
+      <h1>HTML Form</h1>
+      <form class="textbox">
+        <table>
+          <tr>
+            <td><label for="first-name">First name : </label></td>
+            <td><input type="text" name="first-name" id="first-name"/></td>
+          </tr>
+          <tr>
+            <td><label for="last-name">Last name : </label></td>
+            <td><input type="text" name="last-name" id="last-name"/></td>
+          </tr>
+          <tr>
+            <td><label for="user-birtdday">Date of Birtd : </label></td>
+            <td><input type="text" name="user-birtdday" id="user-birtdday"/></td>
+          </tr>
+          <tr>
+            <td><label for="user-email">E-mail : </label></td>
+            <td><input type="text" name="user-email" id="user-email"/></td>
+          </tr>
+          <tr>
+            <td><label for="user-number">Mobile Number : </label></td>
+            <td><input type="text" name="user-number" id="user-number"/></td>
+          </tr>
+        </table>
+        <div class="buttonbox">
+          <button class="submit flexbutton" type="button"><strong>SUBMIT</strong></button>
+          <button class="reset flexbutton" type="button"><strong>RESET</strong></button>
+        </div>
+      </form>
   </body>
 </html>
